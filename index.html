@@ -1,0 +1,36 @@
+<html lang = 'en'>
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+    <link rel="stylesheet" href="style.css" />  
+    <title>Pig Game</title>
+</head>
+<body>
+    <header>
+    <h1>Pig game</h1>
+    <button class="btn_restart" onclick="restart()">Restart Game!</button>  
+    </header>
+    <main>
+        <button class="btn_roll" onclick ="btn_rolling()">Roll</button>
+        <button class="btn_hold" onclick="btn_holding()">Hold</button>
+        <img src="dice-1.png" id ="id_img" class="img_dice" alt="dice" width="100px" height="100px">
+        <section class="leftside" id="id_leftside">
+            <p class="playertitles">Player 1</p>
+            <p class="playerturn" id="turnleft">Is playing</p>   
+            <p class="score" id="scoreleft">0</p>   
+            <p class="lblscore">Your current score is:</p>
+            <p class="currscore" id="curr_scoreleft">0</p>   
+        </section>
+        <section class="rightside" id="id_rightside">
+            <p class="playertitles">Player 2</p>
+            <p class="playerturn" id="turnright">Is waiting</p>   
+            <p class="score" id="scoreright">0</p>
+            <p class="lblscore">Your current score is:</p>
+            <p class="currscore" id="curr_scoreright">0</p>
+        </section>
+        <div class="bell" id="bell"><img class="bellimg" src="bell_icon.png" alt="bell" width="120" height="120"></div>
+    </main>
+    <script src="scriptver2.js"></script>
+</body>
+</html>
